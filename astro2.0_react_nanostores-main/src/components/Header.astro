@@ -1,0 +1,73 @@
+<style>
+    .header {
+      background-color: #f8f9fa; /* Light gray background */
+      padding: 20px 30px;
+      border-bottom: 1px solid #e0e0e0; /* Subtle border */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+  
+    .header-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #0f766e; /* Teal text */
+    }
+  
+    .header-actions {
+      display: flex;
+      gap: 15px;
+    }
+  
+    .header-actions button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .header-actions .add-patient {
+      background-color: #0f766e;
+      color: #ffffff;
+    }
+  
+    .header-actions .add-patient:hover {
+      background-color: #134e4a; /* Darker teal for hover effect */
+    }
+  
+    .header-actions .emergency-room {
+      background-color: #e63946; /* Red background */
+      color: #ffffff;
+    }
+  
+    .header-actions .emergency-room:hover {
+      background-color: #a82834; /* Darker red for hover effect */
+    }
+  
+    .header-actions .pharmacy-details {
+      background-color: #457b9d; /* Blue background */
+      color: #ffffff;
+    }
+  
+    .header-actions .pharmacy-details:hover {
+      background-color: #35596b; /* Darker blue for hover effect */
+    }
+  </style>
+  
+  <header class="header">
+    <div class="header-title">
+      Healthcare Management System
+    </div>
+    <div class="header-actions">
+      <a href="/index2.html">
+        <button class="add-patient">Admit New Patient</button>
+      </a>
+      <button class="emergency-room">Emergency Room</button>
+      <button class="pharmacy-details">Pharmacy Details</button>
+    </div>
+  </header>
+  

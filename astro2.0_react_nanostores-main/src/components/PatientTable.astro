@@ -1,0 +1,173 @@
+<style>
+    .patient-table-container {
+      background-color: #ffffff; /* White background */
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      border: 1px solid #e0e0e0; /* Light border */
+    }
+  
+    .patient-table-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+  
+    .patient-table-header input {
+      padding: 10px;
+      width: 200px;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+    }
+  
+    .patient-table-header .filters,
+    .patient-table-header .download {
+      background-color: #0f766e;
+      color: #ffffff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+    }
+  
+    .patient-table-header .filters:hover,
+    .patient-table-header .download:hover {
+      background-color: #134e4a; /* Darker teal for hover */
+    }
+  
+    .patient-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    .patient-table th,
+    .patient-table td {
+      text-align: left;
+      padding: 12px 15px;
+      border-bottom: 1px solid #e0e0e0; /* Light row separator */
+    }
+  
+    .patient-table th {
+      background-color: #f8f9fa; /* Light gray header background */
+      font-weight: bold;
+      color: #555555;
+    }
+  
+    .patient-table tbody tr:hover {
+      background-color: #f1f5f9; /* Subtle hover effect for rows */
+    }
+  
+    .pagination {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 15px;
+    }
+  
+    .pagination span {
+      margin: 0 5px;
+      font-size: 0.9rem;
+      color: #555555;
+    }
+  
+    .pagination button {
+      padding: 5px 10px;
+      border: none;
+      background-color: #e0e0e0;
+      color: #555555;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .pagination button:hover {
+      background-color: #d1d5db; /* Slightly darker gray */
+    }
+  
+    .pagination button.active {
+      background-color: #0f766e; /* Active teal */
+      color: #ffffff;
+    }
+  </style>
+  
+  <div class="patient-table-container">
+    <!-- Header with Search and Actions -->
+    <div class="patient-table-header">
+      <input type="text" placeholder="Search here..." />
+      <div>
+        <button class="filters">Filters</button>
+        <button class="download">Download</button>
+      </div>
+    </div>
+  
+    <!-- Patient Table -->
+    <table class="patient-table">
+      <thead>
+        <tr>
+          <th>NAME</th>
+          <th>MOB</th>
+          <th>DATE</th>
+          <th>DOCTOR</th>
+          <th>DEPARTMENT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Andrew Richardson</td>
+          <td>(555) 123-4567</td>
+          <td>09/06/2023 10:00AM</td>
+          <td>Dr. Jennifer Roberts</td>
+          <td>Pediatrics (A-9987)</td>
+        </tr>
+        <tr>
+          <td>Benjamin Thompson</td>
+          <td>(555) 987-6543</td>
+          <td>08/06/2023 10:30AM</td>
+          <td>Dr. Michael Sullivan</td>
+          <td>Cardiology (A-9645)</td>
+        </tr>
+        <tr>
+          <td>Charlotte Ramirez</td>
+          <td>(555) 246-8135</td>
+          <td>08/06/2023 03:00PM</td>
+          <td>Dr. Emily Harris</td>
+          <td>Gynecology (A-9987)</td>
+        </tr>
+        <tr>
+          <td>James Murphy</td>
+          <td>(555) 369-2580</td>
+          <td>10/06/2023 10:00AM</td>
+          <td>Dr. Jonathan Davis</td>
+          <td>Orthopedics (A-9958)</td>
+        </tr>
+        <tr>
+          <td>Amelia Griffin</td>
+          <td>(555) 741-8520</td>
+          <td>10/06/2023 11:00AM</td>
+          <td>Dr. Sarah Mitchell</td>
+          <td>Dermatology (A-9987)</td>
+        </tr>
+        <tr>
+          <td>Evelyn Bennett</td>
+          <td>(555) 654-3210</td>
+          <td>09/06/2023 03:30PM</td>
+          <td>Dr. Andrew Thompson</td>
+          <td>Neurology (A-9820)</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Pagination -->
+    <div class="pagination">
+      <button>◀</button>
+      <span>Page 1 of 2</span>
+      <button class="active">1</button>
+      <button>2</button>
+      <button>▶</button>
+    </div>
+  </div>
+  

@@ -1,0 +1,160 @@
+/* Reset default browser styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f6f8; /* Light background */
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Utility classes for spacing */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+/* Utility classes for text alignment */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* Global link styles */
+a {
+  color: #0f766e; /* Teal color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff; /* Darker teal on hover */
+}
+
+/* Global button styles */
+button {
+  background-color: #f6f8f8; /* Teal background */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0d4f47; /* Darker teal on hover */
+}
+
+/* Card styles */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #0f766e; /* Focus with teal */
+  outline: none;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #0f766e;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller font size on mobile */
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+
+  .sidebar {
+    width: 100%; /* Sidebar full width on mobile */
+    height: auto; /* Sidebar height is dynamic */
+  }
+
+  .main-content {
+    flex-direction: column; /* Stack the content */
+  }
+}
